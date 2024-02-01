@@ -73,6 +73,10 @@ a {
     background-color: var(--violet-color);
 }
 
+#site_footer{
+    background-color: var(--black-color);
+}
+
 .right_hamburger {
     font-size: 30px;
 }
