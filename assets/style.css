@@ -50,7 +50,9 @@ a {
     margin: auto;
     text-align: center;
 }
-
+.distance{
+    gap: 15px;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -59,8 +61,16 @@ a {
 
 #site_header {
     background-color: var(--blue-color);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
-
+#site_main{
+    padding-top: 80px;
+}
 #section_strategic {
     background-color: var(--violet-color);
 }
@@ -117,11 +127,16 @@ a {
 .color_white {
     color: white;
 }
-
+.color_black{
+    color: var(--black-color);
+}
 .color_violet {
     color:var(--violet-color);
 }
 
+.right_list{
+    display: none;
+}
 /*MEDIA TYPES*/
 
 @media screen and (min-width:768px) {
@@ -146,4 +161,16 @@ a {
     .col-desktop-4 {
         width: calc((100% / 12) *4);
     }
+
+    .right_hamburger{
+        display: none;
+    }
+
+    .right_list{
+        display: block;
+    }
+}
+
+.row.distance{
+    list-style: none;
 }
