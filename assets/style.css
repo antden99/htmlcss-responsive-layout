@@ -53,8 +53,10 @@ a {
     padding: 0.5rem 4rem;
     border-radius: 20px;
     color: white;
+    display: block;
 }
-.btn_strategic{   
+
+.btn_strategic {
     width: 50px;
     height: 50px;
     display: flex;
@@ -63,8 +65,9 @@ a {
     background-color: var(--violet-color);
     border-radius: 50%;
 }
+
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: auto;
     text-align: center;
@@ -72,7 +75,7 @@ a {
 
 .distance {
     gap: 20px;
-    
+
 }
 
 .space {
@@ -189,6 +192,11 @@ a {
     display: none;
 }
 
+.text {
+    text-align: left;
+    align-items: start;
+}
+
 /*MEDIA TYPES*/
 
 @media screen and (min-width:768px) {
@@ -204,12 +212,17 @@ a {
         width: calc((100% / 12) * 6);
     }
 
-    .text {
+    .negative_bot {
+        margin-left: -20px;
+    }
+
+    .text_tab{
         text-align: left;
         align-items: start;
     }
-    .negative_bot{
-        margin-left: -20px;
+
+    .direction{
+        flex-direction: row;
     }
 }
 
@@ -229,7 +242,7 @@ a {
     .right_list {
         display: block;
     }
-   
+
 }
 
 .row.distance {
