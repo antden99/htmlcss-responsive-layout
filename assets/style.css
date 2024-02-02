@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'PT Sans', sans-serif;
 }
 
 img {
@@ -19,7 +19,6 @@ img {
 
 .flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -29,7 +28,6 @@ img {
 
 .f_color_invert {
     filter: invert();
-
 }
 
 a {
@@ -38,7 +36,7 @@ a {
 
 .btn {
     background-color: var(--blue-color);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2.5rem;
     border-radius: 20px;
     color: white;
 
@@ -50,9 +48,15 @@ a {
     margin: auto;
     text-align: center;
 }
-.distance{
-    gap: 15px;
+
+.distance {
+    gap: 20px;
 }
+
+.space {
+    justify-content: space-between;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -68,9 +72,11 @@ a {
     right: 0;
     z-index: 1;
 }
-#site_main{
+
+#site_main {
     padding-top: 80px;
 }
+
 #section_strategic {
     background-color: var(--violet-color);
 }
@@ -79,11 +85,11 @@ a {
     background-color: var(--violet-color);
 }
 
-#section_started{
+#section_started {
     background-color: var(--violet-color);
 }
 
-#site_footer{
+#site_footer {
     background-color: var(--black-color);
 }
 
@@ -93,9 +99,13 @@ a {
 
 .card {
     background-color: var(--light-blue-color);
-    padding: 5% 10%;
+    padding: 25px;
     border-radius: 10%;
     height: 100%;
+}
+
+.negative_bot {
+    margin-bottom: -30px;
 }
 
 .border {
@@ -127,16 +137,23 @@ a {
 .color_white {
     color: white;
 }
-.color_black{
+
+.color_black {
     color: var(--black-color);
 }
+
 .color_violet {
-    color:var(--violet-color);
+    color: var(--violet-color);
 }
 
-.right_list{
+.color_blue {
+    color: var(--blue-color);
+}
+
+.right_list {
     display: none;
 }
+
 /*MEDIA TYPES*/
 
 @media screen and (min-width:768px) {
@@ -162,15 +179,15 @@ a {
         width: calc((100% / 12) *4);
     }
 
-    .right_hamburger{
+    .right_hamburger {
         display: none;
     }
 
-    .right_list{
+    .right_list {
         display: block;
     }
 }
 
-.row.distance{
+.row.distance {
     list-style: none;
 }
