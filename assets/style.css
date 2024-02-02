@@ -235,7 +235,9 @@ a {
         text-align: left;
         align-items: start;
     }
-
+    .small_container{
+        width: 500px;
+    }
 
 }
 
@@ -267,11 +269,9 @@ a {
 
     .item2 {
         width: 40%;
-        
+        align-self: end;
     }
-    .negative_bot{
-        padding-bottom: 0;
-    }
+    
     #section_about_us{
         padding: 50px;
     }
