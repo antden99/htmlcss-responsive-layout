@@ -50,7 +50,7 @@ a {
 
 .btn {
     background-color: var(--blue-color);
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 20px;
     color: white;
     display: block;
@@ -80,6 +80,7 @@ a {
 
 .space {
     justify-content: space-between;
+
 }
 
 .transparent {
@@ -129,13 +130,23 @@ a {
 .card {
     background-color: var(--light-blue-color);
     padding: 25px;
-    border-radius: 10%;
+    border-radius: 50px;
     height: 100%;
 }
 
 .negative_bot {
     margin-bottom: -30px;
     max-width: 2500px;
+}
+
+.row.distance {
+    list-style: none;
+}
+
+.img_square {
+    width: 150px;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .border {
@@ -197,6 +208,10 @@ a {
     align-items: start;
 }
 
+.row.distance {
+    align-items: center;
+}
+
 /*MEDIA TYPES*/
 
 @media screen and (min-width:768px) {
@@ -216,14 +231,12 @@ a {
         margin-left: -20px;
     }
 
-    .text_tab{
+    .text_tab {
         text-align: left;
         align-items: start;
     }
 
-    .direction{
-        flex-direction: row;
-    }
+
 }
 
 @media screen and (min-width:992px) {
@@ -243,14 +256,26 @@ a {
         display: block;
     }
 
-}
+    .direction {
+        flex-direction: row;
+    }
 
-.row.distance {
-    list-style: none;
-}
+    .item1 {
+        width: 60%;
+        
+    }
 
-.img_square {
-    width: 200px;
-    aspect-ratio: 1;
-    object-fit: cover;
+    .item2 {
+        width: 40%;
+        
+    }
+    .negative_bot{
+        padding-bottom: 0;
+    }
+    #section_about_us{
+        padding: 50px;
+    }
+    #section_strategic{
+        padding: 50px;
+    }
 }
